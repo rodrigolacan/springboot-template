@@ -11,11 +11,5 @@ import java.util.List;
 
 @RestController
 public class TestController {
-    @Autowired
-    UserService userService;
 
-    @GetMapping("/test")
-    public List<User> testTable() {
-        return userService.findAll();
-    }
 }
